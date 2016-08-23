@@ -30,23 +30,7 @@ module.exports = function(RED) {
 
     function rawBodyParser(req, res, next) {
         if (req._body) { return next(); }
-
         req._body = true;
-        var isText = true;
-        var checkUTF = false;
-
-        if (req.headers['content-type']) {
-            var parsedType = typer.parse(req.headers['content-type'])
-            if (parsedType.type === "text") {
-                isText = true;
-            } else if (parsedType.subtype === "xml" || parsedType.suffix === "xml") {
-                isText = true;
-            } else if (parsedType.type !== "application") {
-                isText = false;
-            } else if (parsedType.subtype !== "octet-stream") {
-                checkUTF = true;
-            }
-        }
         next();
     }
 
