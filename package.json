@@ -1,6 +1,6 @@
 {
   "name": "node-red-node-stream-in",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node-red input node for form-data http requests with attachements without buffering to file system.",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,5 @@
     "nodes": {
       "stream In": "stream-in.js"
     }
-  }  
+  }
 }
