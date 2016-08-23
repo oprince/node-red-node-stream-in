@@ -1,0 +1,21 @@
+{
+  "name": "node-red-node-stream-in",
+  "version": "1.0.0",
+  "description": "Node-red input node for form-data http requests with attachements without buffering to file system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "skipper",
+    "node-red",
+    "httpin"
+  ],
+  "author": "oritp@il.ibm.com",
+  "license": "Apache-2.0"
+  "node-red": {
+    "nodes": {
+      "stream In": "stream-in.js"
+    }
+  }  
+}
