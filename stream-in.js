@@ -26,7 +26,7 @@ module.exports = function(RED) {
     var jsonParser = bodyParser.json();
     var urlencParser = bodyParser.urlencoded({extended:true});
     var onHeaders = require('on-headers');
-    var typer = require('media-typer');
+    //var typer = require('media-typer');
 
     function rawBodyParser(req, res, next) {
         if (req._body) { return next(); }
